@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnchundiaMari_Examen.Registro" Title="Registro">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Grid >
+                <Label Grid.Row="0" Grid.Column="0" Text="Ingrese su Nombre"/>
+                <Entry Placeholder="Estudinte2021"/>
+                
+                <Label Grid.Row="1" Grid.Column="0" Text="Ingrese el Monto Inicial"/>
+                <Entry Grid.Row="1" Placeholder="MontoI" x:Name="Monto"/>
+                             
+                <Label Grid.Row="2" Grid.Column="0" Text="Pago Mensual"/>
+                <Entry Grid.Row="2"  Placeholder="PagoM" x:Name="Pago"/>
+
+                <Label Grid.Row="3" Grid.Column="0" Text="Iva"/>
+                <Entry Grid.Row="3"  Placeholder="%5" x:Name="Iva"/>
+
+            </Grid>
+
+
+            <Button  Text="Calcular"  Clicked="Button_Clicked" />
+
+
+
+
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

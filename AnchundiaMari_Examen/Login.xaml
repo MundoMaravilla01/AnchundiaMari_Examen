@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnchundiaMari_Examen.Login" Title="Login">
+             
+    <ContentPage.Content>
+
+        <StackLayout>
+            <StackLayout Orientation ="Horizontal" >
+                <Grid>
+                    <Image Source="LOGOUIS.png" WidthRequest="50" HeightRequest="50" Margin="0,50,0,30"></Image>
+
+                    <Label Text="Iniciar Sesión" FontSize="40"/>
+                </Grid>
+            </StackLayout>
+
+            <StackLayout Grid.Row="1" Padding="25,50">
+
+                <Entry Placeholder="usuario" TextColor="Blue" x:Name ="txtUsuario"/>
+                <Entry Placeholder="Contraseña" IsPassword="True" x:Name ="txtPassword" TextColor="Blue"/>
+
+                <Button Text="Acceder" Grid.Row="5" Grid.ColumnSpan="3" CornerRadius="20" Clicked="Button_Clicked"/>
+                <Label Text="" x:Name="lblResultado" TextColor="Red" HorizontalOptions="Center" FontSize="30"/>
+
+            </StackLayout>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+        
+</ContentPage>
